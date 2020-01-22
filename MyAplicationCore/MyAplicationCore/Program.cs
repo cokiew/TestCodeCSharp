@@ -63,6 +63,15 @@ namespace MyAplicationCore
                 };
                 rules.Add(finalResponse);
             } //End foreach Rules
+
+            foreach (var r in rules) {
+                Console.WriteLine("AlerColor " + r.AlertColor);
+                foreach (var s in r.PointColorsPaint)
+                {
+                    Console.WriteLine(s);
+                }
+            }
+
         }
     }
 }
